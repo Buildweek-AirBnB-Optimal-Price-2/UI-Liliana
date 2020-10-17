@@ -29,18 +29,29 @@ body{
 }
 
 header{
-    padding: 4em;
+    padding: 2em;
+
     
 }
+
+.logoNavbar{
+    display: flex;
+    justify-content: space-between;
+    
+    }
 .navbar {
     margin: 1.3em;
-	padding: 1em ;
-	text-align: center;
-	display: inline-flex;
+    padding-top: 4em;
+    padding-right: 7em;
+    float: left;
+    text-align: center;
+    display: inline-flex;
+
+    
 }
 li{
-    padding-left : 0.9rem;
-    padding-right: 0.9rem;
+    padding:2px;
+    
     list-style-type: none;
     font-size: 1.5em;
    
@@ -48,13 +59,116 @@ li{
 }
 li a{
     text-decoration:  none;
+    border: 1px solid;
+    padding:  5px;
+    border-radius: 1%;
+    
+    
+    
 }
 .logo{
     width: 13em;
     height: auto;
     border-radius: 20%;
+    margin-left:  50%;
 }
 
 .container{
     border: 1px solid gray;
+    height: 300px;
+    width: 85%;
+    display: flex;
+    background-color: white;
+    margin: 0 auto;
 }
+ .section1{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 auto;
+
+
+}
+
+.images{
+    width: 85%;
+    height: 250px;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.images img{
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 10%;
+   
+
+}
+footer{
+    border: 1px solid black;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 10em;
+    width: 85%;
+    display: flex;
+    font-size: 50px;
+    
+}
+footer p{
+    
+    text-align: center;
+}
+    
+
+
+
+@media  screen and(min-width:500px), (max-width:500px){
+
+    
+    .navbar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+       
+    }
+
+    nav ul {
+        height: 300px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-right: 25%;
+        
+    }
+
+    nav ul li{
+        flex-direction: column;
+        
+
+        
+    }
+
+    nav ul li:hover{
+        background-color: gray;
+       
+        
+    }
+
+
+    nav ul li a{
+        font-size: 1em;
+        justify-content: start;
+        padding-right: 5%;
+        align-items: center;
+        text-align: center;
+       
+    }
+    
