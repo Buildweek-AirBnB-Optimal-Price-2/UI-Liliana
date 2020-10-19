@@ -8,6 +8,12 @@ body{
     background: #fcf9ea;
     
 }
+h1{
+  font-family: 'Merriweather', serif;
+  color: coral;
+}
+
+
 
  .headerPart{
     width: 1200px;
@@ -50,23 +56,26 @@ body{
 .navigation a:hover{
     background:#49beb7;
     padding: 15px;
-}
-
-.container{
-    
-    height: 700px;
-    width: 1200px;
-    margin: 0 auto;
-    background: #badfdb;
-    margin-top: 35px;
+     border-radius: 3%
 }
 .container1{
     height: 400px;
     width: 1200px;
     margin: 0 auto;
+    
+    margin-top: 20px;
     background: #badfdb;
-    margin-top: 100px;
 }
+
+.container2{
+    
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    background: #badfdb;
+    margin-top: 20px;
+}
+
 
 .pictures{
     display: flex;
@@ -76,21 +85,31 @@ body{
     align-items: center;
 }
 .pictures img{
-    
+    margin-top: 25px;
     margin-bottom: 25px;
     align-content: center;
     vertical-align: middle;
     width: 280px;
     height: 280px;
-    /*box-shadow: 10px 10px 18px #fcf9ea;*/
-    border-radius:   5%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+     
+    
+}
+
+.pictures img:hover {
+   box-shadow: 0 0 10px 10px #fcf9ea;
 }
 .pic1{
-    background: #fcf9ea;
-    height: 600px;
+    background: #badfdb;
+    height: 500px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+    
  
     
-    border-radius: 5px ;
+   
 }
 hr{
     
@@ -105,5 +124,4 @@ footer{
     background:#ff8a5c;
     margin: 0 auto;
 }
-
 
