@@ -316,6 +316,11 @@ footer {
   display: inline-block;
 }
 
+.picturesAbout img:hover {
+  height: 200px;
+  width: 220px;
+}
+
 .textAbout {
   width: 85%;
   height: 25%;
