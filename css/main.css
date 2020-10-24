@@ -327,6 +327,7 @@ footer {
   text-align: center;
   font-family: "Lato", sans-serif;
 }
+
 /* media queries */
 
 /*cellphone*/
@@ -572,5 +573,107 @@ footer {
 
   .footerLinks a:hover {
     color: #49beb7;
+  }
+}
+
+/*media queries for the about us page*/
+/* cellphone */
+@media only screen and (max-width: 500px) {
+  .firstPicAbout {
+    position: relative;
+  }
+  .firstPicAbout img {
+    width: 100%;
+  }
+
+  .h1About {
+    font-family: "Merriweather", serif;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    color: #fcf9ea;
+    position: center;
+    top: 0%;
+    padding-top: 10%;
+
+    /*padding: 30px;*/
+    height: 400px;
+    text-align: center;
+
+    border-radius: 15px;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container3 {
+    width: 100%;
+    margin: 0 auto;
+
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .picturesAbout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .picAbout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 300px;
+    width: 250px;
+
+    border-radius: 15px;
+    justify-content: center;
+
+    margin-bottom: 15px;
+    border: 4px dashed #49beb7;
+  }
+
+  .picturesAbout img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 180px;
+    height: 180px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .picturesAbout img:hover {
+    height: 200px;
+    width: 220px;
+  }
+
+  .textAbout {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+  .team {
+    display: flex;
+    height: 200px;
+    align-content: center;
+
+    width: 80%;
+  }
+
+  .team h2 {
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .team p {
+    font-size: 0.4em;
+    text-align: center;
   }
 }
