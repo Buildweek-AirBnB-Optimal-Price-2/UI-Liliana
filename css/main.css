@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background: #fcf9ea;
 }
@@ -331,7 +332,7 @@ footer {
 /* media queries */
 
 /*cellphone*/
-@media only screen and (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 500px) {
   .headerPart {
     width: 80%;
     display: flex;
@@ -468,7 +469,7 @@ footer {
   .pictures img {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 320px;
+    width: 280px;
     height: 280px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -574,11 +575,10 @@ footer {
   .footerLinks a:hover {
     color: #49beb7;
   }
-}
 
-/*media queries for the about us page*/
-/* cellphone */
-@media only screen and (max-width: 500px) {
+  /*media queries for the about us page*/
+  /* cellphone */
+
   .firstPicAbout {
     position: relative;
   }
@@ -593,14 +593,14 @@ footer {
     color: #fcf9ea;
     position: center;
     top: 0%;
-    padding-top: 10%;
+    padding-top: 13%;
 
     /*padding: 30px;*/
     height: 400px;
     text-align: center;
 
     border-radius: 15px;
-    font-size: 2.5em;
+    font-size: 2.2em;
     display: flex;
     flex-direction: column;
   }
@@ -670,7 +670,8 @@ footer {
     font-size: 1em;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 0%;
+    text-align: center;
   }
   .team p {
     font-size: 0.4em;
