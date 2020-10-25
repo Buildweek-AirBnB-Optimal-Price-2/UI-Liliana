@@ -3,11 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background: #fcf9ea;
 }
-
+/*navigation bar and logo using flexbox */
 .headerPart {
   width: 1200px;
   display: flex;
@@ -58,11 +57,11 @@ body {
   margin-bottom: 20px;
   border-radius: 15px;
 }
-/*probando*/
+/* best deals here part using rgba for the opacity*/
 .firstPic {
   position: relative;
 }
-
+/*applying rgba for opacity*/
 h1 {
   font-family: "Merriweather", serif;
   width: 100%;
@@ -76,6 +75,7 @@ h1 {
   border-top-right-radius: 15px;
   font-size: 50px;
 }
+/*button here, using a tag*/
 .firstPic a {
   padding: 10px;
   background-color: #49beb7;
@@ -89,7 +89,7 @@ h1 {
   padding: 15px;
   color: #ff8a5c;
 }
-
+/*setting the reviews display*/
 .pictures {
   display: flex;
   flex-direction: row;
@@ -139,51 +139,77 @@ hr {
   width: 1200px;
   margin: 0 auto;
 }
+/*footer*/
 footer {
   width: 1200px;
   height: 200px;
   background: #ff8a5c;
   margin: 0 auto;
-  color: white;
-  font-family: "Lato", sans-serif;
-  display: flex;
-  justify-content: space-evenly;
 }
 
-.copyrightAndSocialIcons {
+.linksDiv {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+.footerLinks {
   display: flex;
   flex-direction: column;
-  padding-top: 2%;
-  align-items: flex-end;
+  width: 40%;
 }
-.copyright p {
-  font-size: 13px;
 
-  margin-right: 60px;
-
-  margin-top: 5px;
+.footerLinks a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-top: 10%;
 }
+
+.footerLinks a:hover {
+  color: #49beb7;
+}
+
 .social-media-icons {
-  margin-left: 120px;
-  width: 350px;
-  margin-top: 20px;
-  /*display:block;*/
-}
+  width: 50%;
 
-.social-icon {
-  color: #fff;
-  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.social-icons {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin-left: 10%;
 }
 
 .social-icons li {
-  /*vertical-align: top;*/
-  /*display: inline;*/
-  display: inline-flex;
-  flex-direction: row;
-  height: 100px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  margin: 3px;
 }
 
+.social-icons a {
+  text-decoration: none;
+}
+
+.copyright p {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  font-size: 13px;
+
+  margin-top: 10%;
+  text-decoration: none;
+  color: white;
+}
+
+/* social media icons */
+/*set the social media icons here, the 
+font color is white, and border radius 50% 
+in order to be round*/
 .fa-facebook {
+  color: #fff;
   padding: 15px 21px;
   background-color: #787878;
   border-radius: 50%;
@@ -192,6 +218,7 @@ footer {
   background-color: #4267b2;
 }
 .fa-instagram {
+  color: #fff;
   padding: 15px 21px;
   background-color: #787878;
   border-radius: 50%;
@@ -200,6 +227,7 @@ footer {
   background-color: #458eff;
 }
 .fa-youtube {
+  color: #fff;
   padding: 15px 21px;
   background-color: #787878;
   border-radius: 50%;
@@ -207,26 +235,7 @@ footer {
 .fa-youtube:hover {
   background-color: #e64a41;
 }
-
-.footerLinks {
-  display: flex;
-  flex-direction: column;
-
-  margin-left: 60px;
-  padding-top: 2%;
-}
-.footerLinks a {
-  text-decoration: none;
-  font-family: "Lato", sans-serif;
-  color: white;
-  font-size: 20px;
-  line-height: 170%;
-  padding-top: 20%;
-}
-
-.footerLinks a:hover {
-  color: #49beb7;
-}
+/* footer ends here */
 
 /* about us page*/
 
@@ -332,7 +341,7 @@ footer {
 /* media queries */
 
 /*cellphone*/
-@media (min-width: 320px) and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .headerPart {
     width: 80%;
     display: flex;
@@ -385,7 +394,7 @@ footer {
     margin-bottom: 20px;
     border-radius: 15px;
   }
-  /*probando*/
+  
   .firstPic {
     position: relative;
   }
@@ -428,7 +437,7 @@ footer {
     margin-top: 20px;
   }
 
-  /*probando*/
+
   .firstPic {
     position: relative;
   }
@@ -469,7 +478,7 @@ footer {
   .pictures img {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 280px;
+    width: 320px;
     height: 280px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -487,51 +496,75 @@ footer {
   }
   footer {
     width: 100%;
-    height: 100%;
+    height: 200px;
     background: #ff8a5c;
     margin: 0 auto;
-    color: white;
-    font-family: "Lato", sans-serif;
-    display: flex;
-    justify-content: space-evenly;
   }
-
-  .copyrightAndSocialIcons {
+  
+  .linksDiv {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+  }
+  .footerLinks {
     display: flex;
     flex-direction: column;
-    padding-top: 2%;
-    align-items: flex-end;
+    width: 25%;
+    
   }
-  .copyright p {
-    font-size: 0.2em;
-    padding-bottom: 5px;
-
-    /*margin-right: 50px;*/
-
-    margin-top: 10px;
-    padding-left: 15px;
+  
+  .footerLinks a {
+    font-family: "Lato", sans-serif;
+    font-size: .8em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-top: 33%;
   }
+  
+  .footerLinks a:hover {
+    color: #49beb7;
+  }
+  
   .social-media-icons {
-    width: 100%;
-    margin-top: 20px;
-    /*display:block;*/
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
   }
-
-  .social-icon {
-    color: #fff;
-    margin-top: 35px;
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-left: 25%;
   }
-
+  
   .social-icons li {
-    /*vertical-align: top;*/
-    /*display: inline;*/
-    display: inline-flex;
-    flex-direction: row;
-    height: 15px;
-    padding-left: 10px;
+    text-decoration: none;
+    margin: 1px;
   }
-
+  
+  .social-icons a {
+    text-decoration: none;
+  }
+  
+  .copyright p {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    font-size: 8px;
+  
+    margin-top: 8%;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* social media icons */
+  /*set the social media icons here, the 
+  font color is white, and border radius 50% 
+  in order to be round*/
   .fa-facebook {
+    color: #fff;
     padding: 7.5px 10.5px;
     background-color: #787878;
     border-radius: 50%;
@@ -540,7 +573,8 @@ footer {
     background-color: #4267b2;
   }
   .fa-instagram {
-    padding: 7.5px 10.5px;
+    color: #fff;
+    padding: 7px 10px;
     background-color: #787878;
     border-radius: 50%;
   }
@@ -548,133 +582,116 @@ footer {
     background-color: #458eff;
   }
   .fa-youtube {
-    padding: 7.5px 10.5px;
+    color: #fff;
+    padding: 7px 10px;
     background-color: #787878;
     border-radius: 50%;
   }
   .fa-youtube:hover {
     background-color: #e64a41;
   }
+  /* footer ends here */
+  
 
-  .footerLinks {
-    display: flex;
-    flex-direction: column;
+  
 
-    margin-left: 60px;
-    padding-top: 2%;
-  }
-  .footerLinks a {
-    text-decoration: none;
-    font-family: "Lato", sans-serif;
-    color: white;
-    font-size: 0.7em;
-    line-height: 170%;
-    padding-top: 20%;
-  }
+  
+/*media queries for the about us page*/
+/* cellphone */
+.firstPicAbout {
+  position: relative;
+}
+.firstPicAbout img {
+  width: 100%;
+}
 
-  .footerLinks a:hover {
-    color: #49beb7;
-  }
+.h1About {
+  font-family: "Merriweather", serif;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fcf9ea;
+  position: center;
+  top: 0%;
+  padding-top: 10%;
 
-  /*media queries for the about us page*/
-  /* cellphone */
+  /*padding: 30px;*/
+  height: 400px;
+  text-align: center;
 
-  .firstPicAbout {
-    position: relative;
-  }
-  .firstPicAbout img {
-    width: 100%;
-  }
+  border-radius: 15px;
+  font-size: 2.5em;
+  display: flex;
+  flex-direction: column;
+}
 
-  .h1About {
-    font-family: "Merriweather", serif;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    color: #fcf9ea;
-    position: center;
-    top: 0%;
-    padding-top: 13%;
+.container3 {
+  width: 100%;
+  margin: 0 auto;
 
-    /*padding: 30px;*/
-    height: 400px;
-    text-align: center;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
-    border-radius: 15px;
-    font-size: 2.2em;
-    display: flex;
-    flex-direction: column;
-  }
+.picturesAbout {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .container3 {
-    width: 100%;
-    margin: 0 auto;
+.picAbout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
 
-    margin-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+  border-radius: 15px;
+  justify-content: center;
 
-  .picturesAbout {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  margin-bottom: 15px;
+  border: 4px dashed #49beb7;
+}
 
-  .picAbout {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 300px;
-    width: 250px;
+.picturesAbout img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 180px;
+  height: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  vertical-align: top;
+  text-align: center;
+}
 
-    border-radius: 15px;
-    justify-content: center;
+.picturesAbout img:hover {
+  height: 200px;
+  width: 220px;
+}
 
-    margin-bottom: 15px;
-    border: 4px dashed #49beb7;
-  }
+.textAbout {
+  width: 100%;
+  height: 25%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+.team {
+  display: flex;
+  height: 200px;
+  align-content: center;
 
-  .picturesAbout img {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    width: 180px;
-    height: 180px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    vertical-align: top;
-    text-align: center;
-  }
+  width: 80%;
+}
 
-  .picturesAbout img:hover {
-    height: 200px;
-    width: 220px;
-  }
-
-  .textAbout {
-    width: 100%;
-    height: 25%;
-    text-align: center;
-    font-family: "Lato", sans-serif;
-  }
-  .team {
-    display: flex;
-    height: 200px;
-    align-content: center;
-
-    width: 80%;
-  }
-
-  .team h2 {
-    font-size: 1em;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0%;
-    text-align: center;
-  }
-  .team p {
-    font-size: 0.4em;
-    text-align: center;
-  }
+.team h2 {
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+.team p {
+  font-size: 0.4em;
+  text-align: center;
 }
