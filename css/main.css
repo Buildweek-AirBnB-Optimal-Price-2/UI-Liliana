@@ -341,7 +341,7 @@ in order to be round*/
 /* media queries */
 
 /*cellphone*/
-@media only screen and (max-width: 500px) {
+@media screen and (min-width: 321px) and (max-width: 500px) {
   .headerPart {
     width: 80%;
     display: flex;
@@ -394,7 +394,7 @@ in order to be round*/
     margin-bottom: 20px;
     border-radius: 15px;
   }
-  
+
   .firstPic {
     position: relative;
   }
@@ -432,11 +432,10 @@ in order to be round*/
   .container1 {
     height: 40%;
     width: 80%;
-    margin: 0 auto;
+
     /*background: #badfdb;*/
     margin-top: 20px;
   }
-
 
   .firstPic {
     position: relative;
@@ -455,31 +454,30 @@ in order to be round*/
     padding: 15px;
     color: #ff8a5c;
   }
-
   .pictures {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2%;
+    width: 100%;
   }
   .pic1 {
     display: flex;
     background: #badfdb;
-    height: 55%;
-    width: 100%;
+    height: 31.25em;
     border-radius: 15px;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 5%;
-    padding-bottom: 5%;
+    margin-bottom: 3%;
   }
   .pictures img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 320px;
-    height: 280px;
+    margin-top: 2%;
+
+    width: 15em;
+    height: 20em;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     vertical-align: top;
@@ -500,7 +498,7 @@ in order to be round*/
     background: #ff8a5c;
     margin: 0 auto;
   }
-  
+
   .linksDiv {
     display: flex;
     flex-direction: row;
@@ -510,62 +508,61 @@ in order to be round*/
     display: flex;
     flex-direction: column;
     width: 25%;
-    
   }
-  
+
   .footerLinks a {
     font-family: "Lato", sans-serif;
-    font-size: .8em;
+    font-size: 0.8em;
     text-decoration: none;
     color: white;
     text-align: center;
-    margin-top: 33%;
+    margin-top: 35%;
   }
-  
+
   .footerLinks a:hover {
     color: #49beb7;
   }
-  
+
   .social-media-icons {
     width: 18%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2%;
+    margin-left: 4.5%;
+    margin-top: 5%;
   }
   .social-icons {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     margin-left: 25%;
+    margin-bottom: 20%;
   }
-  
+
   .social-icons li {
     text-decoration: none;
-    margin: 1px;
   }
-  
+
   .social-icons a {
     text-decoration: none;
   }
-  
+
   .copyright p {
     font-family: "Lato", sans-serif;
     display: flex;
-    font-size: 8px;
-  
-    margin-top: 8%;
+    font-size: 0.2em;
+
     text-decoration: none;
     color: white;
   }
-  
+
   /* social media icons */
   /*set the social media icons here, the 
   font color is white, and border radius 50% 
   in order to be round*/
   .fa-facebook {
     color: #fff;
-    padding: 7.5px 10.5px;
+    padding: 7px 10px;
     background-color: #787878;
     border-radius: 50%;
   }
@@ -574,7 +571,7 @@ in order to be round*/
   }
   .fa-instagram {
     color: #fff;
-    padding: 7px 10px;
+    padding: 6px 9px;
     background-color: #787878;
     border-radius: 50%;
   }
@@ -583,7 +580,7 @@ in order to be round*/
   }
   .fa-youtube {
     color: #fff;
-    padding: 7px 10px;
+    padding: 6px 9px;
     background-color: #787878;
     border-radius: 50%;
   }
@@ -591,107 +588,100 @@ in order to be round*/
     background-color: #e64a41;
   }
   /* footer ends here */
-  
 
-  
+  /*media queries for the about us page*/
+  /* cellphone */
+  .firstPicAbout {
+    position: relative;
+  }
+  .firstPicAbout img {
+    width: 100%;
+  }
 
-  
-/*media queries for the about us page*/
-/* cellphone */
-.firstPicAbout {
-  position: relative;
-}
-.firstPicAbout img {
-  width: 100%;
-}
+  .h1About {
+    font-family: "Merriweather", serif;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    color: #fcf9ea;
+    position: center;
+    top: 0%;
+    padding-top: 20%;
+    height: 400px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 2.2em;
+    display: flex;
+    flex-direction: column;
+  }
 
-.h1About {
-  font-family: "Merriweather", serif;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  color: #fcf9ea;
-  position: center;
-  top: 0%;
-  padding-top: 10%;
+  .container3 {
+    width: 100%;
+    margin: 0 auto;
 
-  /*padding: 30px;*/
-  height: 400px;
-  text-align: center;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
-  border-radius: 15px;
-  font-size: 2.5em;
-  display: flex;
-  flex-direction: column;
-}
+  .picturesAbout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.container3 {
-  width: 100%;
-  margin: 0 auto;
+  .picAbout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 18.75em;
+    width: 15.62em;
 
-  margin-top: 1.5em;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
+    border-radius: 15px;
+    justify-content: center;
 
-.picturesAbout {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+    margin-bottom: 15px;
+    border: 4px dashed #49beb7;
+  }
 
-.picAbout {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 300px;
-  width: 250px;
+  .picturesAbout img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 11.25em;
+    height: 11.25em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    vertical-align: top;
+    text-align: center;
+  }
 
-  border-radius: 15px;
-  justify-content: center;
+  .picturesAbout img:hover {
+    height: 12.5em;
+    width: 12.5em;
+  }
 
-  margin-bottom: 15px;
-  border: 4px dashed #49beb7;
-}
+  .textAbout {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+  .team {
+    display: flex;
+    height: 200px;
+    align-content: center;
+    text-align: center;
+    width: 80%;
+  }
 
-.picturesAbout img {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  width: 180px;
-  height: 180px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  vertical-align: top;
-  text-align: center;
-}
-
-.picturesAbout img:hover {
-  height: 200px;
-  width: 220px;
-}
-
-.textAbout {
-  width: 100%;
-  height: 25%;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-}
-.team {
-  display: flex;
-  height: 200px;
-  align-content: center;
-
-  width: 80%;
-}
-
-.team h2 {
-  font-size: 1em;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15%;
-}
-.team p {
-  font-size: 0.4em;
-  text-align: center;
+  .team h2 {
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+  .team p {
+    font-size: 0.4em;
+    text-align: center;
+  }
 }
