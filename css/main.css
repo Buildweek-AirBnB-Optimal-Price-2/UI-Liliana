@@ -838,4 +838,170 @@ in order to be round*/
     font-size: 0.4em;
     text-align: center;
   }
+
+  /*deals page*/
+  .offer h2 {
+    height: 3.5em;
+    font-family: "Lato", sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    color: #49beb7;
+  }
+
+  .container4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 43.75em;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+
+  .pictureDeal {
+    height: 21.87em;
+    width: 100%;
+  }
+  .pictureDeal img {
+    height: 350px;
+    width: 100%;
+    padding-bottom: 1%;
+    border-radius: 15px;
+  }
+
+  .pictureDeal1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: 350px;
+    width: 100%;
+  }
+
+  .pictureDeal1 img {
+    width: 50%;
+    height: 50%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+  }
+  /*child selector to target img 2 and 4*/
+  .pictureDeal1 img:nth-child(1) {
+    border-top-left-radius: 15px;
+  }
+  .pictureDeal1 img:nth-child(2) {
+    border-top-right-radius: 15px;
+  }
+  .pictureDeal1 img:nth-child(3) {
+    border-bottom-left-radius: 15px;
+  }
+
+  .pictureDeal1 img:nth-child(4) {
+    border-bottom-right-radius: 15px;
+  }
+
+  .promoDeal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 35em;
+    margin-top: 5%;
+  }
+  .promo {
+    width: 80%;
+    color: #ff8a5c;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .promo h4 {
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 1.8em;
+    margin: 0 auto;
+  }
+
+  .promo p {
+    margin-left: 2%;
+    font-size: 1.5em;
+  }
+  .promoHr {
+    width: 100%;
+    border: 1px solid #badfdb;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 7%;
+  }
+
+  .material-icons {
+    margin-top: 45%;
+  }
+
+  .package {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 70%;
+    align-content: center;
+
+    margin: 10%;
+  }
+
+  .packagePromo {
+    border: 3px solid #badfdb;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    font-size: 0.7em;
+    border-radius: 15px;
+    color: #ff8a5c;
+    box-shadow: 0 0 2px 2px #badfdb;
+  }
+  .packageTransportation {
+    color: #ff8a5c;
+    border: 3px solid #badfdb;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    font-size: 0.4em;
+    border-radius: 15px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 0 2px 2px #badfdb;
+  }
+
+  .fa-automobile {
+    margin-top: 50%;
+    margin-bottom: 3%;
+  }
+
+  .packageReservation {
+    display: flex;
+    width: 80%;
+    text-align: center;
+  }
+  .button {
+    font-size: 2em;
+    padding: 5%;
+    width: 100%;
+    height: 50%;
+    background: #49beb7;
+    text-align: center;
+    align-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 5px #badfdb;
+    margin: 0 auto;
+    margin-left: 25%;
+  }
+
+  .button a {
+    text-decoration: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+
+  .button:hover {
+    background: #ff8a5c;
+  }
 }
